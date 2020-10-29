@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 
 class Encrypt extends Component {
   constructor(props){
@@ -159,7 +160,7 @@ class Encrypt extends Component {
         />
         { this.state.crypt === "Encrypt" ? (
           <>
-            <button onClick={this.CCencrypt}>{this.state.crypt}</button>
+            <Button onClick={this.CCencrypt}>{this.state.crypt}</Button>
             <p>Cipher Text: {this.state.cipherText}</p>
           </>
         ):(
